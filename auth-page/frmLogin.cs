@@ -12,12 +12,15 @@ namespace CY_Avenue_Fitness_Hub
 {
     public partial class frmLogin : Form
     {
+
         private frmRegister FormRegister;
         private frmMain FormMain;
+
         public frmLogin()
         {
             InitializeComponent();
         }
+
 
         private void llblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -40,5 +43,6 @@ namespace CY_Avenue_Fitness_Hub
             this.Hide();
             FormMain.ShowDialog();
         }
+
     }
 }

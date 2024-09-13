@@ -38,6 +38,9 @@
             pictureBox1 = new PictureBox();
             txtSPassword = new TextBox();
             txtSUsername = new TextBox();
+
+            panel1 = new Panel();
+
             pictureBox3 = new PictureBox();
             txtSConfirPassword = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -48,7 +51,9 @@
             // panel3
             // 
             panel3.BackColor = Color.Silver;
+
             panel3.Location = new Point(254, 337);
+
             panel3.Name = "panel3";
             panel3.Size = new Size(59, 1);
             panel3.TabIndex = 23;
@@ -58,6 +63,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(73, 329);
+
             label2.Name = "label2";
             label2.Size = new Size(142, 15);
             label2.TabIndex = 24;
@@ -66,39 +72,48 @@
             // label1
             // 
             label1.AutoSize = true;
+
             label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(107, 22);
             label1.Name = "label1";
             label1.Size = new Size(121, 45);
+
             label1.TabIndex = 14;
             label1.Text = "Signup";
             // 
             // panel2
             // 
             panel2.BackColor = Color.Silver;
+
             panel2.Location = new Point(6, 337);
+
             panel2.Name = "panel2";
             panel2.Size = new Size(70, 1);
             panel2.TabIndex = 22;
             // 
             // llblLogin
             // 
+
             llblLogin.ActiveLinkColor = Color.FromArgb(0, 0, 192);
             llblLogin.AutoSize = true;
             llblLogin.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             llblLogin.Location = new Point(210, 326);
+
             llblLogin.Name = "llblLogin";
             llblLogin.Size = new Size(46, 19);
             llblLogin.TabIndex = 21;
             llblLogin.TabStop = true;
             llblLogin.Text = "Login";
+
             llblLogin.LinkClicked += llblLogin_LinkClicked;
+
             // 
             // btnSignup
             // 
             btnSignup.BackColor = Color.Green;
             btnSignup.FlatAppearance.BorderSize = 0;
             btnSignup.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 192, 0);
+
             btnSignup.FlatAppearance.MouseOverBackColor = Color.Lime;
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -106,6 +121,7 @@
             btnSignup.Location = new Point(28, 261);
             btnSignup.Name = "btnSignup";
             btnSignup.Size = new Size(259, 32);
+
             btnSignup.TabIndex = 19;
             btnSignup.Text = "Signup";
             btnSignup.UseVisualStyleBackColor = false;
@@ -113,7 +129,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.icons8_lock_23;
+
             pictureBox2.Location = new Point(25, 173);
+
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(29, 29);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -123,7 +141,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_user_23__1_;
+
             pictureBox1.Location = new Point(25, 138);
+
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(29, 29);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,7 +153,9 @@
             // txtSPassword
             // 
             txtSPassword.Font = new Font("Segoe UI", 12F);
+
             txtSPassword.Location = new Point(57, 172);
+
             txtSPassword.Name = "txtSPassword";
             txtSPassword.PasswordChar = '•';
             txtSPassword.PlaceholderText = "Password";
@@ -143,16 +165,29 @@
             // txtSUsername
             // 
             txtSUsername.Font = new Font("Segoe UI", 12F);
+
             txtSUsername.Location = new Point(57, 137);
+
             txtSUsername.Name = "txtSUsername";
             txtSUsername.PlaceholderText = "Username";
             txtSUsername.Size = new Size(227, 29);
             txtSUsername.TabIndex = 15;
             // 
+
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_lock_23;
             pictureBox3.Location = new Point(25, 208);
+            panel1.BackColor = Color.FromArgb(192, 192, 255);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(320, 24);
+            panel1.TabIndex = 13;
+            // 
+            // pictureBox3
+            // 
+   
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(29, 29);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -162,7 +197,9 @@
             // txtSConfirPassword
             // 
             txtSConfirPassword.Font = new Font("Segoe UI", 12F);
+
             txtSConfirPassword.Location = new Point(57, 207);
+
             txtSConfirPassword.Name = "txtSConfirPassword";
             txtSConfirPassword.PasswordChar = '•';
             txtSConfirPassword.PlaceholderText = "Confirm Password";
@@ -186,9 +223,11 @@
             Controls.Add(pictureBox1);
             Controls.Add(txtSPassword);
             Controls.Add(txtSUsername);
+
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmRegister";
             StartPosition = FormStartPosition.CenterScreen;
+
             Text = "frmRegister";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -209,6 +248,9 @@
         private PictureBox pictureBox1;
         private TextBox txtSPassword;
         private TextBox txtSUsername;
+
+        private Panel panel1;
+
         private PictureBox pictureBox3;
         private TextBox txtSConfirPassword;
     }

@@ -2,7 +2,9 @@ namespace CY_Avenue_Fitness_Hub
 {
     public partial class LoadingForm : Form
     {
+
         frmLogin FormLogin = new frmLogin();
+
         public LoadingForm()
         {
             InitializeComponent();
@@ -17,15 +19,21 @@ namespace CY_Avenue_Fitness_Hub
         {
             if(prgLoading.Value < 100)
             {
+
                 prgLoading.Value += 5;
+
                 lblPercent.Text = prgLoading.Value.ToString() + "%";
             }
             else
             {
                 tmrLoading.Stop();
+
                 this.Hide();
                 FormLogin.ShowDialog();
             }           
+
+            }
+
         }
     }
 }
