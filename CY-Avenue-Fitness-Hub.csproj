@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="auth-page\" />
     <Folder Include="pages\" />
   </ItemGroup>
 

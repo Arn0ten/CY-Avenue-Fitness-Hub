@@ -20,20 +20,7 @@ namespace CY_Avenue_Fitness_Hub
         {
             InitializeComponent();
         }
-
-
-        private void llblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (FormRegister == null || FormRegister.IsDisposed)
-            {
-                FormRegister = new frmRegister();
-                FormRegister.FormClosed += (s, args) => FormRegister = null;
-            }
-            this.Hide();
-            FormRegister.ShowDialog();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             if (FormMain == null || FormMain.IsDisposed)
             {
@@ -44,5 +31,15 @@ namespace CY_Avenue_Fitness_Hub
             FormMain.ShowDialog();
         }
 
+        private void llblRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (FormRegister == null || FormRegister.IsDisposed)
+            {
+                FormRegister = new frmRegister();
+                FormRegister.FormClosed += (s, args) => FormRegister = null;
+            }
+            this.Hide();
+            FormRegister.ShowDialog();
+        }
     }
 }

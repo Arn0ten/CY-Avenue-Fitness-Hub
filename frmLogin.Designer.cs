@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-
-
             label1 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
@@ -38,9 +35,7 @@
             pictureBox2 = new PictureBox();
             btnLogin = new Button();
             llblForgotPassword = new LinkLabel();
-
             llblRegister = new LinkLabel();
-
             panel2 = new Panel();
             label2 = new Label();
             panel3 = new Panel();
@@ -48,7 +43,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-
             // label1
             // 
             label1.AutoSize = true;
@@ -56,28 +50,13 @@
             label1.Location = new Point(107, 22);
             label1.Name = "label1";
             label1.Size = new Size(101, 45);
-
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(192, 192, 255);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(320, 24);
-            panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-   
             label1.TabIndex = 1;
             label1.Text = "Login";
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F);
-
             txtUsername.Location = new Point(57, 150);
-
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Username";
             txtUsername.Size = new Size(227, 29);
@@ -86,9 +65,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F);
-
             txtPassword.Location = new Point(57, 188);
-
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '•';
             txtPassword.PlaceholderText = "Password";
@@ -98,9 +75,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_user_23__1_;
-
             pictureBox1.Location = new Point(25, 151);
-
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(29, 29);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -110,9 +85,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.icons8_lock_23;
-
             pictureBox2.Location = new Point(25, 189);
-
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(29, 29);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -124,7 +97,6 @@
             btnLogin.BackColor = Color.Green;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 192, 0);
-
             btnLogin.FlatAppearance.MouseOverBackColor = Color.LimeGreen;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -135,22 +107,18 @@
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
-
+            btnLogin.Click += btnLogin_Click_1;
             // 
             // llblForgotPassword
             // 
             llblForgotPassword.AutoSize = true;
-
             llblForgotPassword.Location = new Point(184, 222);
-
             llblForgotPassword.Name = "llblForgotPassword";
             llblForgotPassword.Size = new Size(100, 15);
             llblForgotPassword.TabIndex = 8;
             llblForgotPassword.TabStop = true;
             llblForgotPassword.Text = "Forgot Password?";
             // 
-
             // llblRegister
             // 
             llblRegister.AutoSize = true;
@@ -161,8 +129,7 @@
             llblRegister.TabIndex = 10;
             llblRegister.TabStop = true;
             llblRegister.Text = "Register";
-            llblRegister.LinkClicked += llblRegister_LinkClicked;
-
+            llblRegister.LinkClicked += llblRegister_LinkClicked_1;
             // 
             // panel2
             // 
@@ -199,18 +166,13 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel2);
-
             Controls.Add(llblRegister);
-
             Controls.Add(llblForgotPassword);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-
-            Controls.Add(panel1);
-
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
