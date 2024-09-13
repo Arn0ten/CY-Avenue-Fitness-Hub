@@ -30,17 +30,34 @@
         {
             components = new System.ComponentModel.Container();
             pnlBlue = new Panel();
+
             label1 = new Label();
+
             label2 = new Label();
             prgLoading = new ProgressBar();
             tmrLoading = new System.Windows.Forms.Timer(components);
             lblPercent = new Label();
+
+            pictureBox1 = new PictureBox();
             pnlBlue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+
+            pnlBlue.SuspendLayout();
+
             SuspendLayout();
             // 
             // pnlBlue
             // 
             pnlBlue.BackColor = Color.Navy;
+
+            pnlBlue.Controls.Add(pictureBox1);
+            pnlBlue.Dock = DockStyle.Top;
+            pnlBlue.Location = new Point(0, 0);
+            pnlBlue.Name = "pnlBlue";
+            pnlBlue.Size = new Size(551, 192);
+            pnlBlue.TabIndex = 1;
+            // 
+
             pnlBlue.Controls.Add(label1);
             pnlBlue.Dock = DockStyle.Top;
             pnlBlue.Location = new Point(0, 0);
@@ -59,6 +76,7 @@
             label1.TabIndex = 0;
             label1.Text = "CY - Avenue";
             // 
+
             // label2
             // 
             label2.AutoSize = true;
@@ -89,7 +107,21 @@
             lblPercent.TabIndex = 4;
             lblPercent.Text = " ";
             // 
+
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.cy_Avenu_logo_removebg_preview;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(215, 192);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // LoadingForm
+
             // Form1
+
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,22 +131,35 @@
             Controls.Add(label2);
             Controls.Add(pnlBlue);
             FormBorderStyle = FormBorderStyle.None;
+
+            Name = "LoadingForm";
+
             Name = "Form1";
+
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             pnlBlue.ResumeLayout(false);
+
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+
             pnlBlue.PerformLayout();
+
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Panel pnlBlue;
+
         private Label label1;
+
         private Label label2;
         private ProgressBar prgLoading;
         private System.Windows.Forms.Timer tmrLoading;
         private Label lblPercent;
+
+        private PictureBox pictureBox1;
+
     }
 }
