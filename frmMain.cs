@@ -17,7 +17,9 @@ namespace CY_Avenue_Fitness_Hub
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void btnRevenue_Click(object sender, EventArgs e)
         {
             pnlDisplay.Controls.Clear();
             frmDashboard Dashboard = new frmDashboard();

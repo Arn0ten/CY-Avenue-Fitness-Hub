@@ -30,34 +30,24 @@
         {
             components = new System.ComponentModel.Container();
             pnlBlue = new Panel();
-            pictureBox1 = new PictureBox();
             label2 = new Label();
             prgLoading = new ProgressBar();
             tmrLoading = new System.Windows.Forms.Timer(components);
             lblPercent = new Label();
+            picLogo = new PictureBox();
             pnlBlue.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // pnlBlue
             // 
             pnlBlue.BackColor = Color.Navy;
-            pnlBlue.Controls.Add(pictureBox1);
+            pnlBlue.Controls.Add(picLogo);
             pnlBlue.Dock = DockStyle.Top;
             pnlBlue.Location = new Point(0, 0);
             pnlBlue.Name = "pnlBlue";
             pnlBlue.Size = new Size(551, 200);
             pnlBlue.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.cy_Avenu_logo_removebg_preview;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(215, 200);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -89,6 +79,16 @@
             lblPercent.TabIndex = 4;
             lblPercent.Text = " ";
             // 
+            // picLogo
+            // 
+            picLogo.Image = Properties.Resources.cy_Avenu_logo_removebg_preview;
+            picLogo.Location = new Point(0, 0);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(202, 200);
+            picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            picLogo.TabIndex = 0;
+            picLogo.TabStop = false;
+            // 
             // LoadingForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -104,7 +104,7 @@
             Text = "Form1";
             Load += Form1_Load;
             pnlBlue.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,8 +116,6 @@
         private ProgressBar prgLoading;
         private System.Windows.Forms.Timer tmrLoading;
         private Label lblPercent;
-
-        private PictureBox pictureBox1;
-
+        private PictureBox picLogo;
     }
 }

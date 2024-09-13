@@ -30,13 +30,10 @@
         {
             pnlTop = new Panel();
             pnlTopSide = new Panel();
-            picLogo = new PictureBox();
             btnMenu = new Button();
-            button9 = new Button();
-            button10 = new Button();
+            picLogo = new PictureBox();
             btnNotifications = new Button();
             btnWelcomeAdmin = new Button();
-            button1 = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
             button2 = new Button();
             button3 = new Button();
@@ -45,6 +42,7 @@
             button6 = new Button();
             button7 = new Button();
             pnlDisplay = new Panel();
+            btnRevenue = new Button();
             pnlTop.SuspendLayout();
             pnlTopSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
@@ -66,14 +64,27 @@
             // pnlTopSide
             // 
             pnlTopSide.BackColor = Color.MediumBlue;
-            pnlTopSide.Controls.Add(picLogo);
             pnlTopSide.Controls.Add(btnMenu);
-            pnlTopSide.Controls.Add(button9);
-            pnlTopSide.Controls.Add(button10);
+            pnlTopSide.Controls.Add(picLogo);
             pnlTopSide.Location = new Point(0, 0);
             pnlTopSide.Name = "pnlTopSide";
             pnlTopSide.Size = new Size(214, 37);
             pnlTopSide.TabIndex = 3;
+            // 
+            // btnMenu
+            // 
+            btnMenu.BackColor = Color.MediumBlue;
+            btnMenu.FlatAppearance.BorderSize = 0;
+            btnMenu.FlatStyle = FlatStyle.Flat;
+            btnMenu.ForeColor = Color.White;
+            btnMenu.Image = Properties.Resources.icons8_hamburger_menu_23;
+            btnMenu.ImageAlign = ContentAlignment.MiddleRight;
+            btnMenu.Location = new Point(3, 3);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(31, 31);
+            btnMenu.TabIndex = 4;
+            btnMenu.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenu.UseVisualStyleBackColor = false;
             // 
             // picLogo
             // 
@@ -85,50 +96,6 @@
             picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 3;
             picLogo.TabStop = false;
-            // 
-            // btnMenu
-            // 
-            btnMenu.BackColor = Color.MediumBlue;
-            btnMenu.FlatAppearance.BorderSize = 0;
-            btnMenu.FlatStyle = FlatStyle.Flat;
-            btnMenu.Image = Properties.Resources.icons8_hamburger_menu_23;
-            btnMenu.Location = new Point(6, 5);
-            btnMenu.Name = "btnMenu";
-            btnMenu.Size = new Size(28, 25);
-            btnMenu.TabIndex = 2;
-            btnMenu.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            button9.BackColor = Color.Navy;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.ForeColor = Color.White;
-            button9.Image = Properties.Resources.icons8_bell_23;
-            button9.ImageAlign = ContentAlignment.MiddleRight;
-            button9.Location = new Point(818, 8);
-            button9.Name = "button9";
-            button9.Size = new Size(108, 21);
-            button9.TabIndex = 1;
-            button9.Text = "Notifications";
-            button9.TextAlign = ContentAlignment.MiddleLeft;
-            button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            button10.BackColor = Color.Navy;
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.ForeColor = Color.White;
-            button10.Image = Properties.Resources.icons8_user_23__2_;
-            button10.ImageAlign = ContentAlignment.MiddleRight;
-            button10.Location = new Point(929, 8);
-            button10.Name = "button10";
-            button10.Size = new Size(138, 21);
-            button10.TabIndex = 0;
-            button10.Text = "Welcome | Admin";
-            button10.TextAlign = ContentAlignment.MiddleLeft;
-            button10.UseVisualStyleBackColor = false;
             // 
             // btnNotifications
             // 
@@ -162,26 +129,10 @@
             btnWelcomeAdmin.TextAlign = ContentAlignment.MiddleLeft;
             btnWelcomeAdmin.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.Black;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Navy;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(207, 38);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = Color.Black;
-            flowLayoutPanel1.Controls.Add(button1);
+            flowLayoutPanel1.Controls.Add(btnRevenue);
             flowLayoutPanel1.Controls.Add(button2);
             flowLayoutPanel1.Controls.Add(button3);
             flowLayoutPanel1.Controls.Add(button4);
@@ -294,6 +245,22 @@
             pnlDisplay.Size = new Size(861, 565);
             pnlDisplay.TabIndex = 4;
             // 
+            // btnRevenue
+            // 
+            btnRevenue.BackColor = Color.Black;
+            btnRevenue.FlatAppearance.BorderSize = 0;
+            btnRevenue.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnRevenue.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
+            btnRevenue.FlatStyle = FlatStyle.Flat;
+            btnRevenue.ForeColor = Color.White;
+            btnRevenue.Location = new Point(3, 3);
+            btnRevenue.Name = "btnRevenue";
+            btnRevenue.Size = new Size(207, 38);
+            btnRevenue.TabIndex = 10;
+            btnRevenue.Text = "button1";
+            btnRevenue.UseVisualStyleBackColor = false;
+            btnRevenue.Click += btnRevenue_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -316,7 +283,6 @@
         #endregion
 
         private Panel pnlTop;
-        private Button button1;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button button2;
         private Button button3;
@@ -326,11 +292,10 @@
         private Button button7;
         private Button btnWelcomeAdmin;
         private Button btnNotifications;
-        private Button btnMenu;
         private Panel pnlTopSide;
-        private Button button9;
-        private Button button10;
         private PictureBox picLogo;
         private Panel pnlDisplay;
+        private Button btnMenu;
+        private Button btnRevenue;
     }
 }
