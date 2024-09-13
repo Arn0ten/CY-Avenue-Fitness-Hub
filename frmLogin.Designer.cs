@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             label1 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
@@ -36,7 +35,7 @@
             pictureBox2 = new PictureBox();
             btnLogin = new Button();
             llblForgotPassword = new LinkLabel();
-            llblRgister = new LinkLabel();
+            llblRegister = new LinkLabel();
             panel2 = new Panel();
             label2 = new Label();
             panel3 = new Panel();
@@ -44,29 +43,20 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(192, 192, 255);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(320, 24);
-            panel1.TabIndex = 0;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(120, 62);
+            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(107, 22);
             label1.Name = "label1";
-            label1.Size = new Size(88, 38);
+            label1.Size = new Size(101, 45);
             label1.TabIndex = 1;
             label1.Text = "Login";
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F);
-            txtUsername.Location = new Point(57, 137);
+            txtUsername.Location = new Point(57, 150);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Username";
             txtUsername.Size = new Size(227, 29);
@@ -75,7 +65,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F);
-            txtPassword.Location = new Point(57, 172);
+            txtPassword.Location = new Point(57, 188);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '•';
             txtPassword.PlaceholderText = "Password";
@@ -85,7 +75,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_user_23__1_;
-            pictureBox1.Location = new Point(25, 138);
+            pictureBox1.Location = new Point(25, 151);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(29, 29);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -95,7 +85,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.icons8_lock_23;
-            pictureBox2.Location = new Point(25, 173);
+            pictureBox2.Location = new Point(25, 189);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(29, 29);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -107,37 +97,39 @@
             btnLogin.BackColor = Color.Green;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 192, 0);
-            btnLogin.FlatAppearance.MouseOverBackColor = Color.Green;
+            btnLogin.FlatAppearance.MouseOverBackColor = Color.LimeGreen;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(57, 243);
+            btnLogin.Location = new Point(28, 261);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(227, 32);
+            btnLogin.Size = new Size(259, 32);
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // llblForgotPassword
             // 
             llblForgotPassword.AutoSize = true;
-            llblForgotPassword.Location = new Point(184, 204);
+            llblForgotPassword.Location = new Point(184, 222);
             llblForgotPassword.Name = "llblForgotPassword";
             llblForgotPassword.Size = new Size(100, 15);
             llblForgotPassword.TabIndex = 8;
             llblForgotPassword.TabStop = true;
             llblForgotPassword.Text = "Forgot Password?";
             // 
-            // llblRgister
+            // llblRegister
             // 
-            llblRgister.AutoSize = true;
-            llblRgister.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            llblRgister.Location = new Point(199, 326);
-            llblRgister.Name = "llblRgister";
-            llblRgister.Size = new Size(64, 19);
-            llblRgister.TabIndex = 10;
-            llblRgister.TabStop = true;
-            llblRgister.Text = "Register";
+            llblRegister.AutoSize = true;
+            llblRegister.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            llblRegister.Location = new Point(201, 326);
+            llblRegister.Name = "llblRegister";
+            llblRegister.Size = new Size(64, 19);
+            llblRegister.TabIndex = 10;
+            llblRegister.TabStop = true;
+            llblRegister.Text = "Register";
+            llblRegister.LinkClicked += llblRegister_LinkClicked;
             // 
             // panel2
             // 
@@ -174,14 +166,13 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel2);
-            Controls.Add(llblRgister);
+            Controls.Add(llblRegister);
             Controls.Add(llblForgotPassword);
             Controls.Add(btnLogin);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
@@ -193,8 +184,6 @@
         }
 
         #endregion
-
-        private Panel panel1;
         private Label label1;
         private TextBox txtUsername;
         private TextBox txtPassword;
@@ -202,7 +191,7 @@
         private PictureBox pictureBox2;
         private Button btnLogin;
         private LinkLabel llblForgotPassword;
-        private LinkLabel llblRgister;
+        private LinkLabel llblRegister;
         private Panel panel2;
         private Label label2;
         private Panel panel3;
